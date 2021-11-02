@@ -29,6 +29,7 @@ Observation: The performance of all the other models significantly improved whil
 
 So, the best model for the project was identified as Random Forest. The classification report for the model can be found below:
 
+```
 Accuracy score of the training data with Random Forest:  0.9315960912052117
 
 Accuracy score of the test data with Random Forest:  0.8246753246753247
@@ -38,11 +39,10 @@ Accuracy score of the test data with Random Forest:  0.8246753246753247
            0       0.87      0.88      0.87       107
            1       0.72      0.70      0.71        47
     
-    accuracy                           0.82       154
-    
-    
+    accuracy                           0.82       154    
    macro avg       0.79      0.79      0.79       154
 weighted avg       0.82      0.82      0.82       154
+```
 
 
 
