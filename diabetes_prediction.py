@@ -35,11 +35,9 @@ import lightgbm as lgb
 data = pd.read_csv("pima-data.csv")
 
 
-
 #Checking the number of rows and Columns in the dataset
 
 data.shape
-
 
 
 #Checking the statistical measures of the dataset
@@ -47,17 +45,14 @@ data.shape
 data.describe()
 
 
-
 #Printing the first 5 rows of the dataset
 
 data.head(5)
 
 
-
 #Checking if any null value is present
 
 data.isnull().values.any()
-
 
 
 #Getting correlations of each features in dataset
@@ -67,12 +62,10 @@ top_corr_features = corrmat.index
 plt.figure(figsize=(20,20))
 
 
-
 #Plotting heat map
 
 g=sns.heatmap(data[top_corr_features].corr(),annot=True,cmap="RdYlGn")
 corr_val = data.corr()
-
 
 
 #Changing Target column data from boolean to number
@@ -83,11 +76,9 @@ diabetes_true_count = len(data.loc[data['diabetes'] == True])
 diabetes_false_count = len(data.loc[data['diabetes'] == False])
 
 
-
 #Checking for Class Imbalance
 
 (diabetes_true_count,diabetes_false_count)
-
 
 
 #Separating data and labels
@@ -98,7 +89,6 @@ X = data[feature_columns].values
 y = data[predicted_class].values
 
 
-
 #Feature Scaling
 
 scaler = StandardScaler()
@@ -106,11 +96,9 @@ scaler.fit(X)
 X = scaler.transform(X)
 
 
-
 #Train Test Split
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state=0)
-
 
 
 #Checking number of 0 values per feature
@@ -126,15 +114,12 @@ print("number of rows missing age: {0}".format(len(data.loc[data['age'] == 0])))
 print("number of rows missing skin: {0}".format(len(data.loc[data['skin'] == 0])))
 
 
-
 #Performing Imputation
 
 fill_values = SimpleImputer(missing_values=0, strategy='mean')
 
 X_train = fill_values.fit_transform(X_train)
 X_test = fill_values.fit_transform(X_test)
-
-
 
 
 
@@ -202,9 +187,6 @@ print(classification_report(y_test, X_test_prediction))
 
 
 
-
-
-
 ## Applying Support Vector Classification Algorithm with RandomizedSearchCV(for Hyperparameter optimization)
 
 
@@ -259,9 +241,6 @@ print('Accuracy score of the test data with SVC : ', test_data_accuracy)
 #Classification report
 
 print(classification_report(y_test, X_test_prediction))
-
-
-
 
 
 
@@ -335,9 +314,6 @@ print(classification_report(y_test, X_test_prediction))
 
 
 
-
-
-
 ## Applying LightGBM Algorithm with RandomizedSearchCV(for Hyperparameter optimization)
 
 
@@ -398,10 +374,6 @@ print('Accuracy score of the test data with LGBMClassifier : ', test_data_accura
 #Classification report
 
 print(classification_report(y_test, X_test_prediction))
-
-
-
-
 
 
 
