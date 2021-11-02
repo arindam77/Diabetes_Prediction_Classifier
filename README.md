@@ -4,7 +4,7 @@
 The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. The dataset used for this project was the pima-diabetes dataset. Further context of the problem statement can be found on https://www.kaggle.com/uciml/pima-indians-diabetes-database
 
 
-Tested with 4 different models and was able to achieve a maximum accuracy of 82 percent on the test data.
+Experimented with 4 different models and was able to achieve a maximum accuracy of 82 percent on the test data.
 
 The different models used in this project were:
 
