@@ -20,9 +20,9 @@ The different models used in this project were:
 Tested with  5 fold cross validation and 10 fold cross validation and different hyperparameter optimization techniques for performance improvement.
 
 
-The highest accuracy on the test data with 5 fold cross validation was obtained with Support Vector Classifier. The accuracy was 78%.
+With hyperparameter optimization, the highest accuracy on the test data with 5 fold cross validation was obtained through Support Vector Classifier. The accuracy was 78%.
 
-The highest accuracy on the test data with 10 fold cross validation was obtained with Random Forest Classifier. The accuracy was 82%.
+With hyperparameter optimization, the highest accuracy on the test data with 10 fold cross validation was obtained through Random Forest Classifier. The accuracy was 82%.
 
 Observation: The performance of all the other models significantly improved while using 10 fold cross validation.
 
