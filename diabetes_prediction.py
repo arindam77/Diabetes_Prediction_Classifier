@@ -104,9 +104,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, rand
 #Checking number of 0 values per feature
 
 print("total number of rows : {0}".format(len(data)))
-print("number of rows missing glucose_conc: {0}".format(len(data.loc[data['glucose_conc'] == 0])))
+print("number of rows missing num_preg: {0}".format(len(data.loc[data['num_preg'] == 0])))
 print("number of rows missing glucose_conc: {0}".format(len(data.loc[data['glucose_conc'] == 0])))
 print("number of rows missing diastolic_bp: {0}".format(len(data.loc[data['diastolic_bp'] == 0])))
+print("number of rows missing thickness: {0}".format(len(data.loc[data['thickness'] == 0])))
 print("number of rows missing insulin: {0}".format(len(data.loc[data['insulin'] == 0])))
 print("number of rows missing bmi: {0}".format(len(data.loc[data['bmi'] == 0])))
 print("number of rows missing diab_pred: {0}".format(len(data.loc[data['diab_pred'] == 0])))
