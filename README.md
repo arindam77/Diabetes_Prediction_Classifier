@@ -9,8 +9,11 @@ Tested with 4 different models and was able to achieve a maximum accuracy of 82 
 The different models used in this project were:
 
 1.Random Forest
+
 2.Support Vector Classifier
+
 3.XGBoost
+
 4.LightGBM
 
 
@@ -27,7 +30,9 @@ Observation: The performance of all the other models significantly improved whil
 So, the best model for the project was identified as Random Forest. The classification report for the model can be found below:
 
 Accuracy score of the training data with Random Forest:  0.9315960912052117
+
 Accuracy score of the test data with Random Forest:  0.8246753246753247
+
               precision    recall  f1-score   support
 
            0       0.87      0.88      0.87       107
