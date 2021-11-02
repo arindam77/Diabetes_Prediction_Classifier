@@ -6,9 +6,6 @@
 """
 
 
-
-
-
 #Importing all libraries
 
 import pandas as pd
@@ -136,10 +133,6 @@ fill_values = SimpleImputer(missing_values=0, strategy='mean')
 
 X_train = fill_values.fit_transform(X_train)
 X_test = fill_values.fit_transform(X_test)
-
-
-
-
 
 
 
