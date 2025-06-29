@@ -6,7 +6,7 @@ The objective of the dataset is to diagnostically predict whether or not a patie
 
 Experimented with 4 different models and was able to achieve a maximum accuracy of 82 percent on the test data.
 
-The different models used in this project were:
+The different models used in this project were::
 
 1.Random Forest
 
